@@ -118,7 +118,7 @@ export const NavBar = ()=>{
             q: `${event.target.value}`
           })}`
         });
-        window.location.reload();
+        // window.location.reload();
       }
     };
 

@@ -18,7 +18,7 @@ const CastComponent = ({castAPI}) =>{
         <div className = 'infoCast'>
             <img className = 'CastImage' src = {medium} alt='' />
             <div>
-                <a href = {`/actor/${person.id}`} target='blank'><h2 className = 'personText'>{person.name}</h2></a>
+                <a href = {`Final-Project/actor/${person.id}`} target='blank'><h2 className = 'personText'>{person.name}</h2></a>
                 <p className = 'charText'>As {character.name}</p>
             </div>
         </div>
