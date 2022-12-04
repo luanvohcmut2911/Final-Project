@@ -38,7 +38,7 @@ export const NavBar = ()=>{
           const {displayName, photoURL, uid, email} = user;
           setUser({displayName, photoURL, uid, email});
           setLogIn(true);
-          navigate('/');
+          navigate('/Final-Project/');
         }
       })
     };
@@ -60,7 +60,7 @@ export const NavBar = ()=>{
     const handleCloseNavMenu = (page) => {
       setAnchorElNav(null);
       if(pages.includes(page)){
-        navigate(`/${page}`);
+        navigate(`/Final-Project/${page}`);
       }
     };
 
@@ -68,7 +68,7 @@ export const NavBar = ()=>{
       setAnchorElUser(null);
       if(setting==='Logout'){
         setLogIn(false);
-        navigate('/');
+        navigate('/Final-Project/');
       };
     };
     const Search = styled('div')(({ theme }) => ({ // search bar
@@ -110,7 +110,6 @@ export const NavBar = ()=>{
         },
       },
     }));
-    const location = useLocation();
     const handleClickSearchBar = (event) =>{
       if(event.key==='Enter'){
         navigate ({
@@ -202,7 +201,7 @@ export const NavBar = ()=>{
               variant='h5'
               noWrap
               component='a'
-              href='/'
+              href='/Final-Project/'
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },

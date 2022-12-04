@@ -13,7 +13,7 @@ export const ActorCard = ({dataAPI}) => {
     }
     const navigate = useNavigate();
     const handleClickButton = (ID)=>{
-        navigate(`/actor/${ID}`);
+        navigate(`/Final-Project/actor/${ID}`);
     };
     return (
         // <Link href = '/' underline='none'>

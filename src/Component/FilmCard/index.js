@@ -13,7 +13,7 @@ export const FilmCard = ({dataAPI}) => {
     }
     const navigate = useNavigate();
     const handleClickButton = (ID)=>{
-        navigate(`/shows/${ID}`);
+        navigate(`/Final-Project/shows/${ID}`);
     };
     return (
         <button type='button' className = 'part' onClick={()=>{
