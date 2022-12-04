@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import UserDefault from '../../Asset/UserDefault.png';
 import './index.css';
+import { useNavigate } from 'react-router-dom';
 
 const CastComponent = ({castAPI}) =>{
     const {person, character} = castAPI;
@@ -14,11 +15,15 @@ const CastComponent = ({castAPI}) =>{
     else{
         medium = image.medium;
     }
+    const handleClickH2 = ()=>{
+        const navigate = useNavigate();
+        navigate(`/Final-Project/actor/${person.id}`);
+    }
     return (
         <div className = 'infoCast'>
             <img className = 'CastImage' src = {medium} alt='' />
             <div>
-                <a href = {`Final-Project/actor/${person.id}`} target='blank'><h2 className = 'personText'>{person.name}</h2></a>
+                <h2 className = 'personText' onClick={handleClickH2}>{person.name}</h2>
                 <p className = 'charText'>As {character.name}</p>
             </div>
         </div>
