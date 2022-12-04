@@ -113,7 +113,7 @@ export const NavBar = ()=>{
     const handleClickSearchBar = (event) =>{
       if(event.key==='Enter'){
         navigate ({
-          pathname: "search",
+          pathname: "Final-Project/search",
           search: `?${createSearchParams({
             q: `${event.target.value}`
           })}`
