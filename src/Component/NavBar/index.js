@@ -131,7 +131,7 @@ export const NavBar = ()=>{
               variant='h6'
               noWrap
               component='a'
-              href='/'
+              href='/Final-Project/'
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
