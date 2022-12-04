@@ -1,16 +1,8 @@
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import RedditIcon from '@mui/icons-material/Reddit';
-// import TwitterIcon from '@mui/icons-material/Twitter';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import CopyrightIcon from '@mui/icons-material/Copyright';
-
-// import {
-//     FacebookIcon,
-//     RedditIcon,
-//     TwitterIcon,
-//     InstagramIcon,
-//     CopyrightIcon
-// } from '@mui/icons-material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import RedditIcon from '@mui/icons-material/Reddit';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import CopyrightIcon from '@mui/icons-material/Copyright';
 
 import './index.css';
 
@@ -20,13 +12,13 @@ export const Footer = () => {
             <hr />
             <div className = 'leftPartUpper'>
                 <p id = 'text'>Follow us on: </p>
-                {/* <FacebookIcon />
+                <FacebookIcon />
                 <RedditIcon />
                 <InstagramIcon />
-                <TwitterIcon />  */}
+                <TwitterIcon /> 
             </div>
             <div className = 'leftPartLower'>
-                {/* <CopyrightIcon /> */}
+                <CopyrightIcon />
                 <p id='text'>HeatTV</p>
             </div>
         </div>

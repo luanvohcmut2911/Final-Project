@@ -15,10 +15,11 @@ import {
     MenuItem,
     InputBase,
 } from '@mui/material';
-// import { SearchIcon } from '@mui/icons-material';
+import SearchIcon from '@mui/icons-material/Search';
+import AdbIcon from '@mui/icons-material/Adb';
+import MenuIcon from '@mui/icons-material/Menu';
 import firebase, { auth } from '../../firebase/config';
-import { useLocation, useNavigate, createSearchParams } from 'react-router-dom';
-import jwtDecode from 'jwt-decode';
+import { useNavigate, createSearchParams } from 'react-router-dom';
 // import UserImage from '../../Asset/Gura.jpg';
 
 
@@ -33,8 +34,6 @@ export const NavBar = ()=>{
       auth.signInWithPopup(fbProvider);
       auth.onAuthStateChanged((user)=>{
         if(user){
-          const accessToken = user._delegate.accessToken;
-          const decoded = jwtDecode(accessToken);
           const {displayName, photoURL, uid, email} = user;
           setUser({displayName, photoURL, uid, email});
           setLogIn(true);
@@ -126,7 +125,7 @@ export const NavBar = ()=>{
       <AppBar position='sticky' style={{ background: '#3282B8' }}>
         <Container maxWidth='xl'>
           <Toolbar disableGutters>
-            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} href='/'/> { /* Icon for logo */ } 
+            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} href='/'/>
             <Typography
               variant='h6'
               noWrap
@@ -154,7 +153,7 @@ export const NavBar = ()=>{
                 onClick={handleOpenNavMenu}
                 color='inherit'
               >
-                {/* <MenuIcon /> */}
+              <MenuIcon />
               </IconButton> {/* Icon for list option when browser is small */}
               <Menu 
                 id='menu-appbar'
@@ -185,7 +184,7 @@ export const NavBar = ()=>{
             </Box>
             <Search>
               <SearchIconWrapper>
-                {/* <SearchIcon /> */}
+                <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase 
                 id = 'searchBar'
