@@ -15,8 +15,8 @@ const CastComponent = ({castAPI}) =>{
     else{
         medium = image.medium;
     }
+    const navigate = useNavigate();
     const handleClickH2 = ()=>{
-        const navigate = useNavigate();
         navigate(`/Final-Project/actor/${person.id}`);
     }
     return (
