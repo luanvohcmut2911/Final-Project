@@ -39,11 +39,8 @@ p{
 b{
     display: inline-block;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-a :hover{
+h2 :hover{
+    cursor: pointer;
     color: #3282B8;
 }
 .schedule, .genres{
