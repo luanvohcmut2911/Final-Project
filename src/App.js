@@ -29,12 +29,12 @@ const App = () => {
                         <div className = 'App'>
                             <Container>
                                 <Routes>
-                                    <Route path='' element = {<Main />} />
-                                    <Route path='shows' element = {<Main />} />
-                                    <Route path='shows/:f' element = {<FilmDetail />}/>
-                                    <Route path='actor' element = {<ActorList />} />
-                                    <Route path='actor/:f' element = {<ActorDetail />}/> 
-                                    <Route path='search' element = {<Search/>} />
+                                    <Route path='/Final-Project/' element = {<Main />} />
+                                    <Route path='/Final-Project/shows' element = {<Main />} />
+                                    <Route path='/Final-Project/shows/:f' element = {<FilmDetail />}/>
+                                    <Route path='/Final-Project/actor' element = {<ActorList />} />
+                                    <Route path='/Final-Project/actor/:f' element = {<ActorDetail />}/> 
+                                    <Route path='/Final-Project/search' element = {<Search/>} />
                                     <Route path='/*' element = {<Error/>} />
                                 </Routes>
                             </Container>
